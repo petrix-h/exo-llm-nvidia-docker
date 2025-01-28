@@ -1,6 +1,8 @@
 # exo-llm-nvidia-docker
 Testing running Exo LLM cluster in docker containers
 
+Actual project (this is just a docker container running it): https://github.com/exo-explore/exo
+
 # Create the image
 ```
 docker build -t exo-test-nvidia .
