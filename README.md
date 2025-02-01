@@ -14,6 +14,11 @@ docker build -t exo-test-nvidia .
 docker run --gpus all -it -p 52415:52415 exo-test-nvidia /bin/bash
 ```
 
+Mount a local folder to store exo downloads between container recreations
+```
+docker run --rm -it --gpus all --mount type=bind,source=./exo/downloads/,target=/root/.cache/exo/downloads/  -p52415:52415  my-nvidia-smi /bin/bash
+```
+
 ```
 cd exo
 ```
